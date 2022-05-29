@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server component matches the snapshot 1`] = `const express = require("express");
+const app = express();
+const port = 3000;
+const cors = require("cors");
+app.use(cors());
+
+app.get("/music/:query/:media", (req, res) => {
+  const request = require("request");
+  let query = req.params.query;
+  const media = req.params.media;
+  const options = {
+    method: "GET",
+    url: `https://itunes.apple.com/search?term=${query}&media=${media}`,
+    headers: {},
+  };
+  request(options, function (error, response) {
+    if (error) throw new Error(error);
+    res.send(response.body);
+  });
+});
+
+app.delete("/delete/:id", (req, res) => {
+  //Heres where I delete an project spesified by index user chooses
+  let input = parseInt(req.params.id);
+  const removeItem = { id: input };
+
+  objects.splice(
+    objects.findIndex((a) => a.id === removeItem.id),
+    1
+  );
+
+  res.send(objects);
+});
+
+app.listen(port, () => {
+  //The port I run on is http://localhost:3000/
+  console.log(`Example app listening on port ${port}`);
+});
+
+`;

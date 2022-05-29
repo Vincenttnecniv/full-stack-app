@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component matches the snapshot 1`] = `
+<div
+  className="App"
+  data-testid="app-1"
+>
+  <h1>
+    For your media to render please give your qeury and media type below !
+  </h1>
+  <br />
+  <div>
+    <br />
+    <div>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Enter Query"
+          type="text"
+          value="dax"
+        />
+        <br />
+        <input
+          onChange={[Function]}
+          placeholder="Enter Media"
+          required={true}
+          type="text"
+          value="music"
+        />
+        <br />
+        <input
+          type="submit"
+          value="Submit"
+        />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2>
+          The results of your media is displayed below, select your favourites !
+        </h2>
+        <br />
+        <p>
+          All data will display here
+        </p>
+      </form>
+      <br />
+      <br />
+      <br />
+      <h3>
+        Enter the index of your favorite track (starting from 0)
+      </h3>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Enter fav index"
+          required={true}
+          type="number"
+          value=""
+        />
+        <br />
+        <br />
+        <input
+          type="submit"
+          value="Add"
+        />
+      </form>
+      <br />
+      <br />
+      <h3>
+        Press delete to delete all tracks
+      </h3>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          type="submit"
+          value="Delete"
+        />
+      </form>
+      <br />
+      <h1>
+        Your favourites
+      </h1>
+      <br />
+      <br />
+      <p>
+        All favourites will display here
+      </p>
+    </div>
+  </div>
+</div>
+`;

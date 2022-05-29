@@ -1,0 +1,39 @@
+body{
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+h1{
+    color: #48d1cc !important;
+     
+    text-align: center !important;
+}
+
+form{
+text-align: center !important;
+}
+
+h2,h3{
+    color: 	#48d1cc ;
+    text-align: center !important;
+}
+
+td{
+    width:400px; 
+    height:100px;
+    color: #fff !important;
+}
+
+th{
+    
+    color: #fff !important;
+}
+
+.trackID{
+    display: none
+}
+
+p{
+    font-size: 20px;
+    color: #fff !important;
+    text-align: center !important;
+}
